@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: #022534;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+    height: auto;
+    background-color: #e4f5ff;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #96c7d5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+    font-size: 1.5rem;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.main-logo {
+    width: 6rem;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--main-color);
+    margin: 10px;
+}
+
+.nav-links a:hover {
+    opacity: .6;
+    text-decoration: underline;
+}
+
+.productos {
+    width: 70vw;
+    height: 90vh;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-productos {
+    font-size: 1.8rem;
+    color: var(--main-color);
+}
+
+.cafes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cafe {
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    transition: all .2s;
+}
+
+.cafe figure {
+    width: 13vw;
+    height: 25vh;
+    background-color: gray;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen-cafe {
+    width: 10vw;
+    margin-bottom: 2rem;
+}
+
+.cafe > p {
+    font-size: 1.5rem;
+}
+
+.costo {
+    color: green;
+    font-size: 1.5rem;
+}
+
+.cafe:hover {
+    box-shadow: 2px 2px gray;
+    cursor: pointer;
+}
+
+
+@media (max-width: 426px) {
+    header {
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1rem;
+    }
+
+    .main-logo {
+        width: 4rem;
+    }
+
+    .nav-links {
+        justify-content: center;
+    }
+
+    .cafe {
+        width: 70%;
+    }
+
+    .cafe figure {
+        width: 35vw;
+    }
+
+    .imagen-cafe {
+        width: 30vw;
+    }
+}
+
+@media (max-width: 376px) {
+    .productos {
+        width: 90vw;
+    }
+
+    .cafe {
+        width: 80%;
+    }
+
+    .cafe figure {
+        width: 45vw;
+    }
+
+    .imagen-cafe {
+        width: 40vw;
+    }
+
+}

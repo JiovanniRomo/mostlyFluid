@@ -1,0 +1,34 @@
+header {
+    font-size: 1.4rem;
+}
+
+.cafe {
+    width: 30vw
+}
+
+.cafe figure {
+    width: 20vw;
+}
+
+.imagen-cafe {
+    width: 20vw;
+}
+
+@media (max-width: 768px) {
+
+    .productos {
+        width: 80vw;
+    }
+
+    .cafe {
+        width: 35vw;
+    }
+
+    .cafe figure {
+        width: 25vw;
+    }
+
+    .imagen-cafe {
+        width: 20vw;
+    }
+}
