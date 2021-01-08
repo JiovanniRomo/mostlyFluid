@@ -12,12 +12,16 @@ header {
     justify-content: center;
 }
 
+.productos {
+    width: 90vw;
+}
+
 .cafe {
-    width: 70%;
+    width: 80%;
 }
 
 .cafe figure {
-    width: 35vw;
+    width: 40vw;
 }
 
 .imagen-cafe {
