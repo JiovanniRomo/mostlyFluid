@@ -132,7 +132,7 @@ main {
     font-size: 1.5rem;
 }
 
-.footer > a {
+.footer a {
     font-weight: normal;
     color: white;
     text-decoration: none;
