@@ -80,8 +80,8 @@ main {
 }
 
 .cafe {
-    width: 20vw;
-    height: 40vh;
+    width: 15vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,7 +94,7 @@ main {
 
 .cafe figure {
     width: 13vw;
-    height: 25vh;
+    height: 30vh;
     background-color: gray;
     margin-bottom: 1rem;
     display: flex;
