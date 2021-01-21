@@ -31,12 +31,7 @@ header {
     font-size: 1.5rem;
 }
 
-header {
-    flex-direction: row;
-}
-
 main {
-    /* width: 100vw; */
     display: flex;
     justify-content: center;
 }
@@ -66,7 +61,7 @@ main {
 
 .productos {
     width: 70vw;
-    height: 90vh;
+    height: 90%;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -127,21 +122,26 @@ main {
 
 .footer {
     width: 100%;
-    height: 10vh;
+    height: 7vh;
+    margin-top: 2rem;
     background-color: #094f6e;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.footer > h2 {
-    font-weight: normal;
-}
-
-.footer > p {
     font-size: 1.5rem;
 }
+
+.footer > a {
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+}
+
+.footer > a:hover {
+    opacity: .8;
+}
+
 
 @media (max-width: 1024px) {
     header {
@@ -149,7 +149,7 @@ main {
     }
     
     .cafe {
-        width: 30vw
+        width: 30vw;
     }
     
     .cafe figure {
@@ -157,7 +157,7 @@ main {
     }
     
     .imagen-cafe {
-        width: 20vw;
+        width: 15vw;
     }
 }
 
@@ -169,10 +169,12 @@ main {
 
     .cafe {
         width: 35vw;
+        height: 50vh;
     }
 
     .cafe figure {
         width: 25vw;
+        height: 35vh;
     }
 
     .imagen-cafe {
@@ -204,7 +206,7 @@ main {
     }
 
     .imagen-cafe {
-        width: 30vw;
+        width: 32vw;
     }
 }
 
@@ -224,5 +226,12 @@ main {
     .imagen-cafe {
         width: 40vw;
     }
+
+    footer {
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    
 
 }
